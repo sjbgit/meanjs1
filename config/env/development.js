@@ -6,7 +6,7 @@ module.exports = {
 		title: 'MEAN - Development Environment'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
+		clientID: process.env.FACEBOOK_ID || 'APP_ID', //if have environment variables set up with cloud host would use, otherwise would use this value
 		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
 		callbackURL: '/auth/facebook/callback'
 	},
